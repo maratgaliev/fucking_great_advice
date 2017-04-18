@@ -1,6 +1,6 @@
 # FuckingGreatAdvice
 
-**http://fucking-great-advice.ru/ API wrapper for Elixir**
+**http://fucking-great-advice.ru API wrapper for Elixir**
 
 ## Installation
 
