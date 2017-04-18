@@ -9,16 +9,18 @@ defmodule FuckingGreatAdvice.Mixfile do
      start_permanent: Mix.env == :prod,
      description: description,
      package: package,
+     docs: [main: "FuckingGreatAdvice",
+          extras: ["README.md"]],
      deps: deps()]
   end
 
   def application do
     [applications: [:hackney]]
   end
-  
+
   defp description do
     """
-    http://fucking-great-advice.ru/ API wrapper for Elixir.
+    http://fucking-great-advice.ru API wrapper for Elixir.
     """
   end
 
@@ -33,7 +35,9 @@ defmodule FuckingGreatAdvice.Mixfile do
 
   defp deps do
     [
-      { :httpoison, "~> 0.10.0" }, { :poison, "~> 3.0" }
+      { :httpoison, "~> 0.10.0" },
+      { :poison, "~> 3.0" },
+      { :ex_doc, "~> 0.13.1", only: :dev, runtime: false },
     ]
   end
 end
