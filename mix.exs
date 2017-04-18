@@ -37,7 +37,7 @@ defmodule FuckingGreatAdvice.Mixfile do
     [
       { :httpoison, "~> 0.10.0" },
       { :poison, "~> 3.0" },
-      { :ex_doc, "~> 0.13.1", only: :dev, runtime: false },
+      { :ex_doc, "~> 0.14", only: :dev, runtime: false },
     ]
   end
 end
